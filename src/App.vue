@@ -1,9 +1,12 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
-
 <template>
-	<HelloWorld msg="YO" />
+	<NavigationDrawer></NavigationDrawer>
+	<div class="d-flex flex-row">
+		<div>Hello</div>
+	</div>
 </template>
+
+<script setup>
+import NavigationDrawer from "./components/NavigationDrawer.vue";
+</script>
 
 <style scoped></style>
