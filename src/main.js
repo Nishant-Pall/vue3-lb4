@@ -14,19 +14,19 @@ import { aliases, mdi } from "vuetify/lib/iconsets/mdi";
 import "@mdi/font/css/materialdesignicons.css";
 
 const vuetify = createVuetify({
-	components,
-	directives,
-	theme: {
-		defaultTheme: "dark",
-	},
-	icons: {
-		iconfont: "mdi",
-		defaultSet: "mdi",
-		aliases,
-		sets: {
-			mdi,
-		},
-	},
+  components,
+  directives,
+  theme: {
+    defaultTheme: "dark",
+  },
+  icons: {
+    iconfont: "mdi",
+    defaultSet: "mdi",
+    aliases,
+    sets: {
+      mdi,
+    },
+  },
 });
 
 createApp(App).use(vuetify).mount("#app");
