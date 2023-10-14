@@ -17,20 +17,29 @@
             prepend-icon="mdi-folder"
             title="Page 1"
             value="page1"
+            @click="changePage('page_1')"
           ></v-list-item>
           <v-list-item
             prepend-icon="mdi-account-multiple"
             title="Page 2"
             value="page2"
+            @click="changePage('page_2')"
           ></v-list-item>
           <v-list-item
             prepend-icon="mdi-star"
             title="Page 3"
             value="page3"
+            @click="changePage('page_1')"
           ></v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-layout>
   </v-card>
 </template>
-<script setup></script>
+<script setup>
+const emit = defineEmits(["change-page"]);
+
+function changePage(pageId) {
+  emit("change-page", pageId);
+}
+</script>
